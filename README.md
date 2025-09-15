@@ -17,4 +17,4 @@ color:
 ```
 ---
 
-[高科大]((https://www.nkust.edu.tw/))
+[高科大](https://www.nkust.edu.tw/)
