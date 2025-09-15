@@ -9,6 +9,8 @@
 
 C112118148 郭建佑
 
+😟
+
 ```
 color:
 - red
@@ -18,3 +20,5 @@ color:
 ---
 
 [高科大](https://www.nkust.edu.tw/)
+
+![nkust](nkust.png)
