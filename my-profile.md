@@ -17,7 +17,7 @@
 | 麻古茶坊 | 國立高雄科技大學 |
 
 ```
-if (she's_love != "me")
+if (emotion != "good")
 	print("cry")
 ```
 >程式碼之所以有價值，
