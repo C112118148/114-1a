@@ -1,20 +1,17 @@
 ```graphviz
-digraph hierarchy {
-
-                nodesep=1.0 // increases the separation between nodes
-                
-                node [color=Red,fontname=Courier,shape=box] //All nodes will this shape and colour
-                edge [color=Blue, style=dashed] //All the lines look like this
-
-                研擬計畫->{任務分配 取得硬體}
-                任務分配->程式開發
-                取得硬體->安裝硬體
-                程式開發->程式測試
-                安裝硬體->{撰寫使用手冊 轉換檔案}
-                程式測試->系統測試
-                撰寫使用手冊->使用者訓練
-                轉換檔案->使用者訓練
-                系統測試->使用者測試
-                使用者訓練->使用者測試
+digraph {
+	node[shape=record];
+	rankdir="LR";
+    no1 [label = "取得授權 | 編號:1 | 開始:第1天 | 結束:第10天 | 需時:10天"]
+    no2 [label = "聘僱分析師 | 編號:2 | 開始:第11天 | 結束:40 | 需時:30天"]
+    no1->no2
+    no3 [label = "規劃訓練 | 編號:3 | 開始:第41天 | 結束:第45天 | 需時:5天"]
+    no4 [label = "安排後勤 | 編號:4 | 開始:第41天 | 結束:第65天 | 需時:25天"]
+    {rank=same;no3 no4}
+    no2->no3
+    no2->no4
+    no5 [label = "宣告訓練 | 編號:5 | 開始:第66天 | 結束:第95天 | 需時:30天"]
+    no3->no5
+    no4->no5
 }
 ```
